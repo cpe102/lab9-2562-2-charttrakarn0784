@@ -10,10 +10,9 @@ using namespace std;
 int main()
 {
     
-    ifstream cheerbook;
+    ifstream cheerbook("cheerbook.txt");
     string textline;
     ofstream cheerbook_copy;
-    cheerbook.open("cheerbook.txt");
     cheerbook_copy.open("cheerbook_copy.txt");
     cheerbook_copy << "-------------------- SOTUS ---------------------\n";
     while (getline(cheerbook,textline)){
